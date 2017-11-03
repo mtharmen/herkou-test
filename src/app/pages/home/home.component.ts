@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
       )
   }
 
-  getPost(): void {
+  postTest(): void {
     console.log('api-post-call')
     this.postSub = this.api.postTest$()
       .subscribe(

@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
   }
 
   getTest(): void {
+    console.log('api-get-call')
     this.getSub = this.api.getTest$()
       .subscribe(
         res => {
@@ -37,6 +38,7 @@ export class HomeComponent implements OnInit {
   }
 
   getPost(): void {
+    console.log('api-post-call')
     this.postSub = this.api.postTest$()
       .subscribe(
         res => {
